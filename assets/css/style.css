@@ -26,6 +26,7 @@ body{
 
 .d-flex{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .column{
@@ -80,6 +81,10 @@ body{
 
 .py-1{
     padding: 1rem;
+}
+
+.my-top{
+    margin-top: 1rem;
 }
 
 .my-top2{
@@ -180,24 +185,28 @@ header{
 
 @media screen and (min-width:768px) {
     .col-md-4{
-        width:40%
+        width:calc(100% / 12 * 4)
     }
     
     .col-md-6{
-        width:50%;
+        width:calc(100% / 12 * 6)
     }
     
     .col-md-8{
-        width:60%;
+        width:calc(100% / 12 * 8)
     }
     
     .col-md-12{
         width: 100%
     }
 
-    .container{
+    .first-row .container{
         display: flex;
-        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .first-row [class|="col-"]{
+        padd
     }
 
     .img_first img{
@@ -215,5 +224,13 @@ header{
     
     .text_menu{
         display: block;
+    }
+
+    .first-row .row{
+        flex-wrap: nowrap;
+    }
+
+    .img_first img{
+        width: 100%;
     }
 }
