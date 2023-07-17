@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+}
+
+:root{
+    --rs-primary: #0084fd;
+    --rs-secondary: #9792e4;
+    --rs-shadow: #d0e8ff;
+}
+
+/* Utilities*/
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    max-width: 1152px;
+    width: 80%;
+    margin: auto;
+}
+
+.col4{
+    width:calc(100% / 12 * 4)
+}
+
+.col6{
+    width:calc(100% / 12 * 6)
+}
+
+.col8{
+    width:calc(100% / 12 * 8)
+}
+
+.col12{
+    width:calc(100% / 12)
+}
