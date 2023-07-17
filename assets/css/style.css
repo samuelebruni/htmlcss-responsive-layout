@@ -167,6 +167,10 @@ header{
     padding: 1rem 0;
 }
 
+.self-center{
+    align-self: center;
+}
+
 /*#endregion*/
 
 /*#region Main*/
@@ -223,10 +227,26 @@ header{
     border-radius: 50%;
     margin-bottom: 1rem;
 }
+.third-row .col12{
+    background-color: var(--rs-secondary);
+    padding: 2rem;
+    color: white;
+}
 
+.img_testimonial img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
+.intro{
+    color: black;
+}
 
-
+.third-row h3{
+    color: white;
+}
 
 
 
@@ -265,6 +285,15 @@ header{
     .row{
         flex-wrap: nowrap;
     }
+
+    .testimonial_card{
+        flex-direction: row;
+    }
+
+    .align-center{
+        align-items: flex-start;
+    }
+    
 }
 
 
