@@ -259,7 +259,7 @@ header{
 
     .second-row .row{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .row{
@@ -270,7 +270,7 @@ header{
 
 
 
-@media screen and (min-width:1020px) {
+@media screen and (min-width:1032px) {
     .icon_menu{
         display: none;
     }
@@ -279,11 +279,35 @@ header{
         display: block;
     }
 
-    .first-row .row{
-        flex-wrap: nowrap;
+    .first-row .first_cardimg{
+        display: flex;
+        flex-direction: row;
     }
 
     .img_first img{
         width: 100%;
+    }
+
+    .container2 > .column{
+        flex-direction: row;
+    }
+
+    .second-row .row{
+        flex-wrap: nowrap;
+        gap: 4rem;
+    }
+
+    .second_img img{
+        width: 100%;
+    }
+
+    .col-l-5{
+        width: calc(100% / 12 * 5);
+        padding: 0 1rem;
+        align-self: flex-end;
+    }
+
+    .col-l-7{
+        width: calc(100% / 12 * 7);
     }
 }
