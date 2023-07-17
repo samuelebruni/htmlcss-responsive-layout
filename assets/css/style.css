@@ -21,12 +21,15 @@ body{
 
 .row{
     display: flex;
+}
+
+.wrap{
     flex-wrap: wrap;
 }
 
+
 .d-flex{
     display: flex;
-    flex-wrap: wrap;
 }
 
 .column{
@@ -36,6 +39,11 @@ body{
 .container{
     max-width: 1152px;
     width: 80%;
+    margin: auto;
+}
+
+.container2{
+    width: 70%;
     margin: auto;
 }
 
@@ -71,6 +79,10 @@ body{
     gap: 1rem;
 }
 
+.gap{
+    gap: 0.5rem;
+}
+
 .text-unstyled{
     text-decoration: none;
 }
@@ -81,6 +93,10 @@ body{
 
 .py-1{
     padding: 1rem;
+}
+
+.py-bottom4{
+    padding-bottom: 4rem;
 }
 
 .my-top{
@@ -113,6 +129,10 @@ body{
 
 .bg-color{
     background-color: var(--rs-light);
+}
+
+.bg-color-light{
+    background-color: white;
 }
 /*#region Header */
 
@@ -182,15 +202,26 @@ header{
     background-color: var(--rs-secondary);
 }
 
-.second-row h2{
+.strategic_title{
     font-size: 30px;
     color: white;
     margin-bottom: 2rem;
     margin-top: 5rem;
 }
 
-.second-row p{
+.strategic_p{
     color: white;
+}
+
+.second_img img{
+    width: 100%;
+}
+
+.second_icon{
+    background-color: var(--rs-secondary);
+    padding: 1.2rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
 
@@ -200,8 +231,7 @@ header{
 
 
 
-
-@media screen and (min-width:768px) {
+@media screen and (min-width:758px) {
     .col-md-4{
         width:calc(100% / 12 * 4)
     }
@@ -221,18 +251,26 @@ header{
     .first-row .container{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
     }
 
     .img_first img{
         width: 50%;
+    }
+
+    .second-row .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row{
+        flex-wrap: nowrap;
     }
 }
 
 
 
 
-@media screen and (min-width:1120px) {
+@media screen and (min-width:1020px) {
     .icon_menu{
         display: none;
     }
