@@ -42,3 +42,84 @@ body{
 .col12{
     width:calc(100% / 12)
 }
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.gap1{
+    gap: 1rem;
+}
+
+.text-unstyled{
+    text-decoration: none;
+}
+
+.py-1{
+    padding: 1rem;
+}
+
+/* #region Header */
+
+header{
+    background-color: var(--rs-primary);
+}
+
+.text_menu{
+    display: none;
+}
+
+.text_menu a{
+    color: var(--rs-shadow);
+    padding-right: 0.75rem;
+}
+
+.button_header{
+    background-color: white;     
+    border-radius: 20px;
+    padding: 0.4rem;
+}
+
+#black{
+    color: black;
+}
+
+.icon_menu{
+    padding: 1rem 0;
+}
+
+.logo img{
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:781px) {
+    .icon_menu{
+        display: none;
+    }
+    
+    .text_menu{
+        display: block;
+    }
+}
