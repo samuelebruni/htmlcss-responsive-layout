@@ -114,6 +114,10 @@ body{
     padding: 1rem;
 }
 
+.py-late{
+    padding: 0 1.5rem;
+}
+
 .py-bottom4{
     padding-bottom: 4rem;
 }
@@ -209,6 +213,11 @@ header{
 /*#endregion*/
 
 /*#region Main*/
+
+.col12 > .row{
+    height: 100%;
+}
+
 
 .img_first img{
     width: 100%;
@@ -420,6 +429,8 @@ header{
     text-decoration: underline;
 }
 
+/*#endregion*/
+
 
 @media screen and (min-width:758px) {
     .col-md-4{
@@ -514,6 +525,15 @@ header{
 
     .img_first img{
         width: 100%;
+        align-items: flex-end;
+    }
+
+    .text_first{
+        width: 60%;
+    }
+
+    .img_first{
+        width: 40%;
     }
 
     .container2 > .column{
