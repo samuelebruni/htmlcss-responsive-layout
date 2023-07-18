@@ -407,6 +407,19 @@ header{
     font-size: 20px;
 }
 
+.bottom-footer{
+    background-color: black;
+}
+
+.bottom-footer p, span{
+    color: white;
+}
+
+.bottom-footer a{
+    color: var(--rs-secondary);
+    text-decoration: underline;
+}
+
 
 @media screen and (min-width:758px) {
     .col-md-4{
