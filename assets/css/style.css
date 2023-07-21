@@ -134,6 +134,10 @@ body{
     margin-top: 1rem;
 }
 
+.my-right{
+    margin-right: 1rem;
+}
+
 .my-top2{
     margin-top: 2rem;
 }
@@ -221,6 +225,7 @@ header{
 
 .img_first img{
     width: 100%;
+    object-fit: cover;
 }
 
 .text_first{
@@ -518,10 +523,7 @@ header{
         display: block;
     }
 
-    .first-row .first_cardimg{
-        display: flex;
-        flex-direction: row;
-    }
+   
 
     .img_first img{
         width: 100%;
@@ -562,4 +564,12 @@ header{
     .col-l-4{
         width: calc(100% / 12 * 4);
     }
+}
+
+@media screen and (min-width: 1399px) {
+    .first-row .first_cardimg{
+        display: flex;
+        flex-direction: row;
+    }
+
 }
